@@ -13,7 +13,7 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 sudo cmake --build . --target install
-sudo ldconfig
+sudo ldconfig # not needed for Mac OS
 ```
 
 If you don't have a Sweep device yet you can build a dummy `libsweep.so` always returning static point cloud data:
